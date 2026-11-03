@@ -1,0 +1,303 @@
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Nov  3 07:03:30 UTC 2026
+
+  System load:  0.17               Processes:             118
+  Usage of /:   10.8% of 28.02GB   Users logged in:       1
+  Memory usage: 56%                IPv4 address for enX0: 172.31.29.191
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+18 updates can be applied immediately.
+10 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '26.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Tue Nov  3 06:52:18 2026 from 18.206.107.27
+ubuntu@ip-172-31-29-191:~$ sudo apt update
+sudo apt install -y curl
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+sudo apt install -y nodejs
+node -v
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+18 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+curl is already the newest version (8.5.0-2ubuntu10.16).
+curl set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.
+2026-11-03 07:04:31 - Installing pre-requisites
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+18 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+gnupg set to manually installed.
+The following NEW packages will be installed:
+  apt-transport-https
+The following packages will be upgraded:
+  ca-certificates
+1 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
+Need to get 143 kB of archives.
+After this operation, 33.8 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260816ubuntu0.24.04.1 [139 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 apt-transport-https all 2.8.3 [3970 B]
+Fetched 143 kB in 0s (6611 kB/s)
+Preconfiguring packages ...
+(Reading database ... 94798 files and directories currently installed.)
+Preparing to unpack .../ca-certificates_20260816ubuntu0.24.04.1_all.deb ...
+Unpacking ca-certificates (20260816ubuntu0.24.04.1) over (20260601~24.04.1) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../apt-transport-https_2.8.3_all.deb ...
+Unpacking apt-transport-https (2.8.3) ...
+Setting up apt-transport-https (2.8.3) ...
+Setting up ca-certificates (20260816ubuntu0.24.04.1) ...
+Updating certificates in /etc/ssl/certs...
+rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+4 added, 5 removed; done.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ca-certificates (20260816ubuntu0.24.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Processing triggers for ca-certificates-java (20240118) ...
+done.
+Scanning processes...                                                                                              
+Scanning candidates...                                                                                             
+Scanning linux images...                                                                                           
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #5: java[4211]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease                            
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease                          
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease                                        
+Get:5 https://deb.nodesource.com/node_22.x nodistro InRelease [12.1 kB]    
+Get:6 https://deb.nodesource.com/node_22.x nodistro/main amd64 Packages [12.8 kB]
+Fetched 25.0 kB in 1s (40.0 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+17 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2026-11-03 07:04:47 - Repository configured successfully.
+2026-11-03 07:04:47 - To install Node.js, run: apt install nodejs -y
+2026-11-03 07:04:47 - You can use N|solid Runtime as a node.js alternative
+2026-11-03 07:04:47 - To install N|solid Runtime, run: apt install nsolid -y 
+
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 17 not upgraded.
+Need to get 37.8 MB of archives.
+After this operation, 236 MB of additional disk space will be used.
+Get:1 https://deb.nodesource.com/node_22.x nodistro/main amd64 nodejs amd64 22.23.4-1nodesource1 [37.8 MB]
+Fetched 37.8 MB in 1s (67.3 MB/s)
+Selecting previously unselected package nodejs.
+(Reading database ... 94801 files and directories currently installed.)
+Preparing to unpack .../nodejs_22.23.4-1nodesource1_amd64.deb ...
+Unpacking nodejs (22.23.4-1nodesource1) ...
+Setting up nodejs (22.23.4-1nodesource1) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Scanning processes...                                                                                              
+Scanning candidates...                                                                                             
+Scanning linux images...                                                                                           
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #5: java[4211]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+v22.23.4
+ubuntu@ip-172-31-29-191:~$ git clone https://github.com/JSCODE-BOOK/aws-ec2-express.git
+cd aws-ec2-express
+npm i
+Cloning into 'aws-ec2-express'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), 7.61 KiB | 1.90 MiB/s, done.
+
+added 63 packages, and audited 64 packages in 2s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (3 low, 1 moderate, 3 high, 1 critical)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ vi .env
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ cat .env
+DATEBASE_NAME=my_database
+
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ sudo npm i -g pm2
+sudo pm2 start app.js
+
+added 45 packages in 3s
+
+6 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+
+                        -------------
+
+__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+ _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+        _\///______________\///______________\///__\///////////////__
+
+
+                          Runtime Edition
+
+        PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+
+                        -------------
+
+[PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2] Starting /home/ubuntu/aws-ec2-express/app.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name   │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ app    │ fork     │ 0    │ online    │ 0%       │ 28.4mb   │
+└────┴────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ sudo pm2 list
+┌────┬────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name   │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ app    │ fork     │ 0    │ online    │ 0%       │ 64.3mb   │
+└────┴────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+host metrics | cpu: 0% | ram usage: 67.1%
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ pm2 kill
+
+                        -------------
+
+__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+ _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+        _\///______________\///______________\///__\///////////////__
+
+
+                          Runtime Edition
+
+        PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+
+                        -------------
+
+[PM2] Spawning PM2 daemon with pm2_home=/home/ubuntu/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2][WARN] No process found
+[PM2] [v] All Applications Stopped
+[PM2] [v] PM2 Daemon Stopped
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ sudo pm2 kill
+[PM2] Applying action deleteProcessId on app [all](ids: [ 0 ])
+[PM2] [app](0) ✓
+[PM2] [v] All Applications Stopped
+[PM2] [v] PM2 Daemon Stopped
+ubuntu@ip-172-31-29-191:~/aws-ec2-express$ sudo pm2 list
+[PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+[PM2] PM2 Successfully daemonized
+┌────┬───────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name      │ mode     │ ↺    │ status    │ cpu      │ memory   │
+└────┴───────────┴──────────┴──────┴───────────┴──────────┴──────────┘
