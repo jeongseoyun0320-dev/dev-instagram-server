@@ -1,5 +1,3 @@
-# dev-instagram-server
-
 # AWS EC2 Express Server Deployment
 
 이 프로젝트는 AWS EC2(Ubuntu) 환경에서 Node.js와 Express를 활용하여 웹 서버를 구축하고, **PM2**를 통해 백그라운드 프로세스로 안정적으로 배포 및 관리하는 방법을 실습하기 위한 예제 저장소입니다.
