@@ -12,7 +12,7 @@ Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-1014-aws x86_64)
   Swap usage:   0%
 
 
-Expanded Security Maintenance for Applications is not enabled.
+Expanded Security Maintenance for Applications is not enabled. 
 
 18 updates can be applied immediately.
 10 of these updates are standard security updates.
